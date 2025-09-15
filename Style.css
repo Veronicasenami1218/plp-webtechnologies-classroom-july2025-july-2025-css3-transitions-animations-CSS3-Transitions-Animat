@@ -1,0 +1,46 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+/* Part 1: Hover effects */
+#hoverBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+#hoverBtn:hover {
+  background: royalblue;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Animated box with @keyframes */
+.animated-box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: coral;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+/* Part 3: Controlled by JS */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: seagreen;
+}
+.move {
+  animation: moveRight 2s forwards;
+}
+@keyframes moveRight {
+  from { transform: translateX(0); }
+  to { transform: translateX(200px); }
+}
